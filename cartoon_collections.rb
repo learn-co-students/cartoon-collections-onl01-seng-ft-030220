@@ -7,9 +7,7 @@ def roll_call_dwarves(names)
 end
 
 def summon_captain_planet(call)
-  call.collect do |planeteer|
-    "#{planeteer}!".capitalize
-  end
+  call.collect {|planeteer| "#{planeteer}!".capitalize}
 end
 
 def long_planeteer_calls(call)
